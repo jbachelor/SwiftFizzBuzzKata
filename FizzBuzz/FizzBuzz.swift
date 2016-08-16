@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class FizzBuzz {
+    
+    func getValue(number: Int) -> String {
+        return String(0)
+    }
+}
+
+

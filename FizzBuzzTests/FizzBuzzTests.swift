@@ -13,7 +13,17 @@ class FizzBuzzTests: XCTestCase {
     
     // MARK: Tests
     
-    
+    func testFizzBuzz1Returns1() {
+        // arrange
+        let fizzBuzz = FizzBuzz()
+        let expected = "1"
+        
+        // act
+        let actual = fizzBuzz.getValue(1)
+        
+        // assert
+        XCTAssertEqual(expected, actual, prettyError(#function, expected: expected, actual: actual))
+    }
     
     // MARK: Helpers
 
