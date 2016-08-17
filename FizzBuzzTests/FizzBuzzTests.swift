@@ -37,6 +37,14 @@ class FizzBuzzTests: XCTestCase {
         XCTAssertEqual(expected, actual, prettyError(#function, expected: expected, actual: actual))
     }
     
+    func testFizzBuzz15ReturnsFizzBuzz() {
+        let fizzBuzz = FizzBuzz()
+        let expected = "FizzBuzz"
+        let actual = fizzBuzz.getValue(15)
+        
+        XCTAssertEqual(expected, actual, prettyError(#function, expected: expected, actual: actual))
+    }
+    
     
     // MARK: Helpers
 
@@ -44,3 +52,26 @@ class FizzBuzzTests: XCTestCase {
         return "\n\n**** FAILED \(test)  Expected:  \(expected), actual:  \(actual)\n"
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
