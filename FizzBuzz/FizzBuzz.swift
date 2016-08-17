@@ -13,10 +13,10 @@ class FizzBuzz {
     func getValue(number: Int) -> String {        
         if number == 3 {
             return "Fizz"
-        } else if number == 5 || number == 20 {
-            return "Buzz"
         } else if number == 15 {
             return "FizzBuzz"
+        }  else if number % 5 == 0 {
+            return "Buzz"
         } else {
             return String(number)
         }
