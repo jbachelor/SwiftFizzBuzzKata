@@ -105,7 +105,7 @@ class FizzBuzzTests: XCTestCase {
     // MARK: Helpers
 
     func prettyError(test: String, expected: String, actual: String) -> String {
-        return "\n\n**** FAILED \(test)  Expected:  \(expected), actual:  \(actual)\n"
+        return "\n\n**** FAILED \(test)  \n\tExpected:  [\(expected)] \n\tActual:  [\(actual)]\n"
     }
 }
 
