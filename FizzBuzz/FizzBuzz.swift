@@ -21,6 +21,11 @@ class FizzBuzz {
             return String(number)
         }
     }
+    
+
+    func processFrom(startNumber: Int, to endNumber: Int) -> String {
+        return ""
+    }
 }
 
 

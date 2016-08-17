@@ -101,6 +101,14 @@ class FizzBuzzTests: XCTestCase {
         XCTAssertEqual(expected, actual, prettyError(#function, expected: expected, actual: actual))
     }
     
+    func testFizzBuzzRange1to20() {
+        let fizzBuzz = FizzBuzz()
+        let expected = "1, 2, Fizz, 4, Buzz, 6, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz"
+        let actual = fizzBuzz.processFrom(1, to: 20)
+        
+        XCTAssertEqual(expected, actual, prettyError(#function, expected: expected, actual: actual))
+    }
+    
     
     // MARK: Helpers
 
