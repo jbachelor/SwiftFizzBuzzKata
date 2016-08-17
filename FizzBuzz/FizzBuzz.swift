@@ -23,14 +23,22 @@ class FizzBuzz {
     }
     
 
+//    func processFrom(startNumber: Int, to endNumber: Int) -> String {
+//        var fizzBuzzSequence: String = ""
+//        
+//        for number in startNumber...endNumber {
+//            fizzBuzzSequence += "\(getValue(number)), "
+//        }
+//        
+//        return fizzBuzzSequence.substringToIndex(fizzBuzzSequence.endIndex.advancedBy(-2))
+//    }
+    
     func processFrom(startNumber: Int, to endNumber: Int) -> String {
-        var fizzBuzzSequence: String = ""
+        var values: [Int] = [Int]()
+        values += startNumber...endNumber
+        let result = values.map { getValue($0) }
         
-        for number in startNumber...endNumber {
-            fizzBuzzSequence += "\(getValue(number)), "
-        }
-        
-        return fizzBuzzSequence.substringToIndex(fizzBuzzSequence.endIndex.advancedBy(-2))
+        return result.joinWithSeparator(", ")
     }
 }
 
