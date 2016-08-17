@@ -11,7 +11,7 @@ import Foundation
 class FizzBuzz {
     
     func getValue(number: Int) -> String {        
-        if number == 15 {
+        if number % 15 == 0 {
             return "FizzBuzz"
         } else if number % 3 == 0 {
             return "Fizz"
