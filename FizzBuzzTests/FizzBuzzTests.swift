@@ -53,6 +53,14 @@ class FizzBuzzTests: XCTestCase {
         XCTAssertEqual(expected, actual, prettyError(#function, expected: expected, actual: actual))
     }
     
+    func testFizzBuzz20ReturnsBuzz() {
+        let fizzBuzz = FizzBuzz()
+        let expected = "Buzz"
+        let actual = fizzBuzz.getValue(20)
+        
+        XCTAssertEqual(expected, actual, prettyError(#function, expected: expected, actual: actual))
+    }
+    
     
     // MARK: Helpers
 
