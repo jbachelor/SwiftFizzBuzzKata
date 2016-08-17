@@ -10,8 +10,12 @@ import Foundation
 
 class FizzBuzz {
     
-    func getValue(number: Int) -> String {
-        return String(number)
+    func getValue(number: Int) -> String {        
+        if number == 3 {
+            return "Fizz"
+        } else {
+            return String(number)
+        }
     }
 }
 
