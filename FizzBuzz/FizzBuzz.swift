@@ -24,7 +24,13 @@ class FizzBuzz {
     
 
     func processFrom(startNumber: Int, to endNumber: Int) -> String {
-        return ""
+        var fizzBuzzSequence: String = ""
+        
+        for number in startNumber...endNumber {
+            fizzBuzzSequence += "\(getValue(number)), "
+        }
+        
+        return fizzBuzzSequence.substringToIndex(fizzBuzzSequence.endIndex.advancedBy(-2))
     }
 }
 
